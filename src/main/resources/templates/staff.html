@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<div th:each="staff : ${staffs}" class="centralize">
+    <h3 th:text="${staff.username}"></h3>
+    <p th:text="${staff.role}"></p>
+    <hr><br>
+</div>
+</body>
+</html>
