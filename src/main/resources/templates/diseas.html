@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseas</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<div th:each="diseas : ${diseases}" class="centralize">
+    <h3 th:text="${diseas.name}"></h3>
+    <p th:text="${diseas.description}"></p>
+    <hr><br>
+</div>
+</body>
+</html>
