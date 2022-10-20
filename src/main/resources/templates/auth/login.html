@@ -16,7 +16,7 @@
         </svg></a></button>
 
         <h1 class="text-center">Login</h1>
-        <form>
+        <form method="POST" action="http://localhost:8080/auth/login">
             <div class="input-group w-80">
                 <span class="input-group-text">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -40,11 +40,12 @@
             </div>
             <br>
 
+            <div class="centralize">
+                <input type="submit" value="Login">
+                <!--            <button class="main-color" type="submit">Login</button>-->
+            </div>
         </form>
 
-        <div class="centralize">
-            <button class="main-color">Login</button>
-        </div>
 
         <br>
 

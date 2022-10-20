@@ -1,17 +1,17 @@
 package com.hospital.isd3project.controllers;
 
-import com.hospital.isd3project.repos.DiseasesRepos;
-import com.hospital.isd3project.repos.PeopleRepos;
+import com.hospital.isd3project.repos.DiseasesRepo;
+import com.hospital.isd3project.repos.PeopleRepo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-    private final DiseasesRepos diseasesRepos;
-    private final PeopleRepos peopleRepos;
+    private final DiseasesRepo diseasesRepos;
+    private final PeopleRepo peopleRepos;
 
-    public HomeController(DiseasesRepos diseasesRepos, PeopleRepos peopleRepos) {
+    public HomeController(DiseasesRepo diseasesRepos, PeopleRepo peopleRepos) {
         this.diseasesRepos = diseasesRepos;
         this.peopleRepos = peopleRepos;
     }
